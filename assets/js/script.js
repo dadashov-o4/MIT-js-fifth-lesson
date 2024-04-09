@@ -55,7 +55,7 @@ function displayBlog(blogsParametr) {
     const blogYerleseceyiDiv = document.querySelector(".blog-right-side")
     blogYerleseceyiDiv.innerHTML = ''
     //  [] icine bazadaki melumatlar yerlesecek
-    blogsParametr.foreach(birBlog => {
+    blogsParametr.forEach(birBlog => {
         const divElementi = document.createElement( 'div' )
         // <div></div>
         divElementi.classList.add("blog")
@@ -72,7 +72,7 @@ function displayBlog(blogsParametr) {
 }
 // DOM elementlerin yaradilmasi createElament appenChild classList.add 
 // amma funksiyalarin var olmasi islediyi menasini vermir   onlari yuklemek lazimdi
-document.addEventListener("DOMContentLoaded", loaddata)
+document.addEventListener("DOMContentLoaded", loadData)
 // const let hoisting qaydalarina tabe deyil yeni deyiseni/funksiyani sonradan vermeliyik
 function loadData() {
     const blogs = getDataFromLocalStorage()
